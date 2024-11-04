@@ -14,9 +14,9 @@
         compatible = "zmk,combos";
 
         Enter {
-            bindings = <&kp RET>;
-            key-positions = <27 26 28>;
-            timeout-ms = <60>;
+            bindings = <&kp ESCAPE>;
+            key-positions = <31 32>;
+            timeout-ms = <40>;
         };
     };
 
