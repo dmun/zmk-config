@@ -15,16 +15,30 @@
 
         combo_jk {
             bindings = <&kp LEFT_ALT>;
-            key-positions = <31 32 27 28>;
-            require-prior-idle-ms = <0>;
-            timeout-ms = <30>;
+            key-positions = <31 32>;
+            require-prior-idle-ms = <70>;
+            timeout-ms = <10>;
         };
 
-        combo_mr {
-            bindings = <&kp LEFT_GUI>;
-            key-positions = <32 27 26 33>;
-            timeout-ms = <30>;
-            require-prior-idle-ms = <0>;
+        combo_df {
+            bindings = <&kp LEFT_ALT>;
+            key-positions = <27 28>;
+            timeout-ms = <10>;
+            require-prior-idle-ms = <70>;
+        };
+
+        combo_kl {
+            bindings = <&kp RIGHT_GUI>;
+            key-positions = <32 33>;
+            timeout-ms = <10>;
+            require-prior-idle-ms = <70>;
+        };
+
+        combo_sd {
+            bindings = <&kp RIGHT_GUI>;
+            key-positions = <26 27>;
+            timeout-ms = <10>;
+            require-prior-idle-ms = <70>;
         };
     };
 
