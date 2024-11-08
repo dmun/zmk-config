@@ -15,15 +15,18 @@
 
         combo_df {
             bindings = <&kp LEFT_ALT>;
-            key-positions = <28 53>;
-            timeout-ms = <20>;
+            key-positions = <28 27>;
+            timeout-ms = <15>;
+            slow-release;
+            require-prior-idle-ms = <30>;
         };
 
         combo_sd {
             bindings = <&kp RIGHT_GUI>;
-            key-positions = <27 53>;
-            timeout-ms = <20>;
-            require-prior-idle-ms = <0>;
+            key-positions = <27 26>;
+            timeout-ms = <15>;
+            require-prior-idle-ms = <30>;
+            slow-release;
         };
     };
 
