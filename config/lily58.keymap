@@ -20,6 +20,28 @@
         };
     };
 
+    behaviors {
+        bmt: bmt {
+            compatible = "zmk,behavior-hold-tap";
+            label = "BMT";
+            bindings = <&kp>, <&kp>;
+
+            #binding-cells = <2>;
+            flavor = "balanced";
+            tapping-term-ms = <200>;
+        };
+
+        tmt: tmt {
+            compatible = "zmk,behavior-hold-tap";
+            label = "TMT";
+            bindings = <&kp>, <&kp>;
+
+            #binding-cells = <2>;
+            flavor = "tap-preferred";
+            tapping-term-ms = <200>;
+        };
+    };
+
     keymap {
         compatible = "zmk,keymap";
 
