@@ -10,15 +10,7 @@
 #include <dt-bindings/zmk/keys.h>
 
 / {
-    combos {
-        compatible = "zmk,combos";
-
-        Enter {
-            bindings = <&kp ESCAPE>;
-            key-positions = <31 32>;
-            timeout-ms = <40>;
-        };
-    };
+    combos { compatible = "zmk,combos"; };
 
     behaviors {
         bmt: bmt {
