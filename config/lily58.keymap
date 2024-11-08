@@ -10,7 +10,23 @@
 #include <dt-bindings/zmk/keys.h>
 
 / {
-    combos { compatible = "zmk,combos"; };
+    combos {
+        compatible = "zmk,combos";
+
+        combo_jk {
+            bindings = <&kp LEFT_ALT>;
+            key-positions = <31 32 27 28>;
+            require-prior-idle-ms = <70>;
+            timeout-ms = <10>;
+        };
+
+        combo_mr {
+            bindings = <&kp LEFT_GUI>;
+            key-positions = <32 27 26 33>;
+            timeout-ms = <10>;
+            require-prior-idle-ms = <70>;
+        };
+    };
 
     behaviors {
         bmt: bmt {
