@@ -13,28 +13,15 @@
     combos {
         compatible = "zmk,combos";
 
-        combo_jk {
-            bindings = <&kp LEFT_ALT>;
-            key-positions = <31 32>;
-            timeout-ms = <20>;
-        };
-
         combo_df {
             bindings = <&kp LEFT_ALT>;
-            key-positions = <27 28>;
+            key-positions = <28 53>;
             timeout-ms = <20>;
-        };
-
-        combo_kl {
-            bindings = <&kp RIGHT_GUI>;
-            key-positions = <32 33>;
-            timeout-ms = <20>;
-            require-prior-idle-ms = <0>;
         };
 
         combo_sd {
             bindings = <&kp RIGHT_GUI>;
-            key-positions = <26 27>;
+            key-positions = <27 53>;
             timeout-ms = <20>;
             require-prior-idle-ms = <0>;
         };
