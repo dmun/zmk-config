@@ -1,7 +1,5 @@
 manifest:
   remotes:
-    - name: medoix
-      url-base: https://github.com/medoix
     - name: dmun
       url-base: https://github.com/dmun
   projects:
