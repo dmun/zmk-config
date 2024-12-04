@@ -1,10 +1,10 @@
 manifest:
   remotes:
-    - name: dmun
-      url-base: https://github.com/dmun
+    - name: medoix
+      url-base: https://github.com/medoix
   projects:
     - name: zmk
-      remote: dmun
+      remote: medoix
       revision: mikoto_7_1_0
       import: app/west.yml
   self:
