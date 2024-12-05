@@ -18,8 +18,8 @@
 #
 ---
 include:
-  - board: mikoto@7.1
+  - board: mikoto@7.2
     shield: lily58_left
     snippet: studio-rpc-usb-uart
-  - board: mikoto@7.1
+  - board: mikoto@7.2
     shield: lily58_right
