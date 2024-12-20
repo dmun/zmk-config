@@ -45,6 +45,26 @@
             tapping-term-ms = <175>;
             require-prior-idle-ms = <125>;
         };
+
+        tmtl: tmtl {
+            compatible = "zmk,behavior-hold-tap";
+            label = "TMTL";
+            bindings = <&mo>, <&kp>;
+
+            #binding-cells = <2>;
+            flavor = "tap-preferred";
+            tapping-term-ms = <150>;
+        };
+
+        bmtl: bmtl {
+            compatible = "zmk,behavior-hold-tap";
+            label = "BMTL";
+            bindings = <&mo>, <&kp>;
+
+            #binding-cells = <2>;
+            flavor = "balanced";
+            tapping-term-ms = <150>;
+        };
     };
 
     keymap {
