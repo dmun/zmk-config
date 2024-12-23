@@ -12,59 +12,6 @@
 / {
     combos { compatible = "zmk,combos"; };
 
-    behaviors {
-        bmt: bmt {
-            compatible = "zmk,behavior-hold-tap";
-            label = "BMT";
-            bindings = <&kp>, <&kp>;
-
-            #binding-cells = <2>;
-            flavor = "balanced";
-            tapping-term-ms = <150>;
-        };
-
-        tmt: tmt {
-            compatible = "zmk,behavior-hold-tap";
-            label = "TMT";
-            bindings = <&kp>, <&kp>;
-
-            #binding-cells = <2>;
-            flavor = "tap-preferred";
-            tapping-term-ms = <150>;
-        };
-
-        hmt: hmt {
-            compatible = "zmk,behavior-hold-tap";
-            label = "HMT";
-            bindings = <&kp>, <&kp>;
-
-            #binding-cells = <2>;
-            flavor = "hold-preferred";
-            tapping-term-ms = <175>;
-            require-prior-idle-ms = <125>;
-        };
-
-        tmtl: tmtl {
-            compatible = "zmk,behavior-hold-tap";
-            label = "TMTL";
-            bindings = <&mo>, <&kp>;
-
-            #binding-cells = <2>;
-            flavor = "tap-preferred";
-            tapping-term-ms = <150>;
-        };
-
-        bmtl: bmtl {
-            compatible = "zmk,behavior-hold-tap";
-            label = "BMTL";
-            bindings = <&mo>, <&kp>;
-
-            #binding-cells = <2>;
-            flavor = "balanced";
-            tapping-term-ms = <150>;
-        };
-    };
-
     keymap {
         compatible = "zmk,keymap";
 
@@ -77,11 +24,11 @@
             //                     | ALT  | GUI  | LOWER|  SPACE |  | ENTER | RAISE| BSPC  | GUI   |
 
             bindings = <
-&kp GRAVE         &kp N1  &kp N2  &kp N3  &kp N4    &kp N5                              &kp N6      &kp N7  &kp N8     &kp N9   &kp N0    &kp MINUS
-&kp TAB           &kp Q   &kp W   &kp F   &kp P     &kp B                               &kp J       &kp L   &kp U      &kp Y    &kp SEMI  &kp EQUAL
-&mt LCTRL ESCAPE  &kp A   &kp R   &kp S   &kp T     &kp G                               &kp M       &kp N   &kp E      &kp I    &kp O     &kp SQT
-&kp LSHFT         &kp Z   &kp X   &kp C   &kp D     &kp V     &kp LBKT     &kp RBKT     &kp K       &kp H   &kp COMMA  &kp DOT  &kp FSLH  &kp BACKSLASH
-                                  &trans  &kp LGUI  &kp LALT  &kp SPACE    &lt 2 ENTER  &kp DELETE  &mo 1   &trans
+&kp GRAVE         &kp N1  &kp N2  &kp N3  &kp N4    &kp N5                              &kp N6    &kp N7  &kp N8     &kp N9   &kp N0    &kp MINUS
+&kp TAB           &kp Q   &kp W   &kp F   &kp P     &kp B                               &kp J     &kp L   &kp U      &kp Y    &kp SEMI  &kp EQUAL
+&mt LCTRL ESCAPE  &kp A   &kp R   &kp S   &kp T     &kp G                               &kp M     &kp N   &kp E      &kp I    &kp O     &kp SQT
+&kp LSHFT         &kp Z   &kp X   &kp C   &kp D     &kp V     &kp LBKT     &kp RBKT     &kp K     &kp H   &kp COMMA  &kp DOT  &kp FSLH  &kp BACKSLASH
+                                  &trans  &kp LGUI  &kp LALT  &kp SPACE    &lt 2 ENTER  &kp BSPC  &mo 1   &trans
             >;
         };
 
