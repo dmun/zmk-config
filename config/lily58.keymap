@@ -24,11 +24,11 @@
             //                     | ALT  | GUI  | LOWER|  SPACE |  | ENTER | RAISE| BSPC  | GUI   |
 
             bindings = <
-&kp GRAVE         &kp N1  &kp N2  &kp N3  &kp N4        &kp N5                                      &kp N6     &kp N7        &kp N8     &kp N9   &kp N0    &kp MINUS
-&kp TAB           &kp Q   &kp W   &kp F   &kp P         &kp B                                       &kp J      &kp L         &kp U      &kp Y    &kp SEMI  &kp EQUAL
-&mt LCTRL ESCAPE  &kp A   &kp R   &kp S   &kp T         &kp G                                       &kp M      &kp N         &kp E      &kp I    &kp O     &kp SQT
-&kp LEFT_SHIFT    &kp Z   &kp X   &kp C   &kp D         &kp V         &kp LBKT       &kp RBKT       &kp K      &kp H         &kp COMMA  &kp DOT  &kp FSLH  &mo 1
-                                  &trans  &kp LEFT_GUI  &kp LEFT_ALT  &lt 2 ENTER    &kp BACKSPACE  &kp SPACE  &kp LEFT_GUI  &trans
+&kp GRAVE         &kp N1  &kp N2  &kp N3        &kp N4        &kp N5                                 &kp N6         &kp N7        &kp N8         &kp N9   &kp N0    &kp MINUS
+&kp TAB           &kp Q   &kp W   &kp F         &kp P         &kp B                                  &kp J          &kp L         &kp U          &kp Y    &kp SEMI  &kp EQUAL
+&mt LCTRL ESCAPE  &kp A   &kp R   &kp S         &kp T         &kp G                                  &kp M          &kp N         &kp E          &kp I    &kp O     &kp SQT
+&kp LEFT_SHIFT    &kp Z   &kp X   &kp C         &kp D         &kp V      &kp LBKT       &kp RBKT     &kp K          &kp H         &kp COMMA      &kp DOT  &kp FSLH  &mo 1
+                                  &kp LEFT_GUI  &kp LEFT_ALT  &kp SPACE  &lt 2 ENTER    &lt 1 ENTER  &kp BACKSPACE  &kp LEFT_GUI  &kp RIGHT_ALT
             >;
         };
 
@@ -44,11 +44,11 @@
 
         nav_layer {
             bindings = <
-&trans  &trans  &trans  &trans     &trans        &trans                    &trans    &trans     &trans     &trans     &trans  &trans
-&trans  &trans  &trans  &trans     &trans        &trans                    &trans    &kp LC(D)  &kp LC(U)  &trans     &trans  &trans
-&trans  &trans  &trans  &kp UNDER  &kp LS(DLLR)  &trans                    &kp LEFT  &kp DOWN   &kp UP     &kp RIGHT  &trans  &trans
-&trans  &trans  &trans  &trans     &trans        &trans  &trans    &trans  &trans    &trans     &trans     &trans     &trans  &trans
-                        &trans     &trans        &trans  &trans    &trans  &trans    &trans     &trans
+&trans  &trans            &trans            &trans            &trans            &trans                    &trans    &trans     &trans     &trans     &trans  &trans
+&trans  &trans            &trans            &trans            &trans            &trans                    &trans    &kp LC(D)  &kp LC(U)  &trans     &trans  &trans
+&trans  &kp LA(NUMBER_4)  &kp LA(NUMBER_3)  &kp LA(NUMBER_2)  &kp LA(NUMBER_1)  &trans                    &kp LEFT  &kp DOWN   &kp UP     &kp RIGHT  &trans  &trans
+&trans  &trans            &trans            &trans            &trans            &trans  &trans    &trans  &trans    &trans     &trans     &trans     &trans  &trans
+                                            &trans            &trans            &trans  &trans    &trans  &trans    &trans     &trans
             >;
         };
     };
